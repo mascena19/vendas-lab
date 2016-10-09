@@ -1,0 +1,48 @@
+<div class="container">
+	<!-- Novo Forncedor. -->
+	<form class="form-horizontal">
+		<fieldset>
+			<!-- Form Name -->
+			<legend>Fornecedor</legend>
+			<!-- Código -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="textinput">Codigo</label>
+				<div class="col-md-6">
+					<input id="txt_codigo" name="codigo" type="text"
+						placeholder="Coloque aqui o codigo" class="form-control input-md"
+						ng-model="fornecedor.codigo">
+				</div>
+			</div>
+			<!-- Nome -->
+			<div class="form-group">
+				<label class="col-md-4 control-label" for="textinput">Nome</label>
+				<div class="col-md-6">
+					<input id="txt_nome" name="nome" type="text"
+						placeholder="Coloque aqui o nome" class="form-control input-md"
+						ng-model="fornecedor.nome">
+				</div>
+			</div>
+			<!-- Tipo -->
+			<div class="form-group">
+				<label  class="col-md-4 control-label" for="textinput">Tipo</label>
+				<div class="col-md-6">
+					<input id="txt_tipo" name="tipo" type="text" 
+						placeholder="Coloque aqui o tipo (Juridico, Fisico)"
+						class="form-control input-md" ng-model="fornecedor.tipo">
+				</div>
+			</div>
+			
+			{{fornecedor.data}}
+			<!-- Button -->
+			<div class="form-group">
+				<label class="col-md-4 control-label"></label>
+				<div class="col-md-4">
+					<button type="button" class="btn btn-success"
+						ng-click="novoFornecedor(fornecedor)">Novo</button>
+				</div>
+			</div>
+
+		</fieldset>
+	</form>
+</div>
+<!-- Container -->
